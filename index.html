@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Поймай мяч</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-4.0.0.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script defer src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/game.js"></script>
+    <!-- <script defer src="./assets/js/bootstrap-4.0.0.js"></script> -->
+</head> 
+<body> 
+    <!-- <div class="pause"> 
+        <h1>Пауза</h1>
+        <p>Нажмите [Esc] для отключения</p>
+    </div>  -->
+<main>
+    <div id="start" class="start panel d-flex">
+        <div class="center start__panel d-flex justify-content-center align-items-center">
+            <div class="w-75 h-75 main d-flex flex-column justify-content-around align-items-center">
+                <h1 style="font-size: 46px; z-index: 5;">Поймай мяч</h1>
+                <div cl~ass="changeName d-flex flex-column  align-items-center" style="margin-top: -3vh">
+                    <h2 style="z-index: 5; margin-bottom: 15px;">Введите ваше имя:</h2>
+                    <form style="z-index: 5;" class="d-flex justify-content-center" name="formName">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Введите имя" name="name">
+                        <input type="submit" class="btn btn-success" id="startGame" value="Начать" style="color: #fff; margin-left: 10px" name="button" disabled>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div id="game" class="game">
+        <div class="info d-flex justify-content-around align-items-center">
+            <div class="d-flex flex-column justify-content-center">
+                <span>Имя игрока: <span id="name" class="name">Имя</span></span>
+                <span>Притянуть мячи(пробел): <span id="skill" class="skill">Готово</span></span>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+                <span>Жизни: <span id="hp" class="hp">3</span></span>
+                <span>Поймано мячей: <span id="points" class="points">0</span></span>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+                <span>Секундомер: <span id="timer" class="timer">00:00</span></span>
+            </div>
+        </div>
+        <div class="elements">
+
+        </div>
+        <img src="./assets/img/player2.png" alt="basketball hoop" class="hoop" tabindex="0">
+    </div>
+    <div id="end" class="end justify-content-center align-items-center">
+        <div class="main">
+            <h2 class="end__text" style="z-index: 5; margin-bottom: 20px;"><span id="playerName" class="playerName">Поздравляем, Имя!</span></h2>
+            <h2 class="end__text" style="z-index: 5; margin-bottom: 20px;"><span id="endTime" class="endTime">Ваше время: 00:00</span></h2>
+            <h2 class="end__text" style="z-index: 5; margin-bottom: 20px;"><span id="collectedFruits" class="collectedFruits">Вы собрали 0 мячей</span></h2>
+            <h2 class="end__text" style="z-index: 5; margin-bottom: 20px;"><span id="congratulation" class="congratulation">Вы выиграли!</span></h2>
+            <button style="z-index: 5; position: relative; font-size: 1.2em;" id="restart" class="restart btn btn-success" style="color: #fff">Начать заново</button>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>
